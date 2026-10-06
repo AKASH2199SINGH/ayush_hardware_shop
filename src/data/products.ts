@@ -190,9 +190,9 @@ export const PRODUCTS: Product[] = Object.entries(RAW).flatMap(([cat, rows]) =>
     description,
     specifications: specs.split("|").map((s) => {
       const [label, ...v] = s.split(":");
-      return { label: label.trim(), value: v.join(":").trim() };
+      return { label: (label ?? "").trim(), value: v.join(":").trim() };
     }),
-    image: catImage[cat],
+    image: catImage[cat] ?? "",
     availability: stocked ? "Usually in stock" : "Ask for availability",
   })),
 );
