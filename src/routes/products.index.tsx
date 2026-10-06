@@ -9,13 +9,13 @@ import { bulkWaLink } from "@/lib/whatsapp";
 import { useRecent } from "@/lib/recent";
 import { cn } from "@/lib/utils";
 
-type S = { q?: string; category?: string; brand?: string };
+type S = { q?: string | undefined; category?: string | undefined; brand?: string | undefined };
 
 export const Route = createFileRoute("/products/")({
   validateSearch: (s: Record<string, unknown>): S => ({
-    q: typeof s.q === "string" && s.q ? s.q : undefined,
-    category: typeof s.category === "string" && s.category ? s.category : undefined,
-    brand: typeof s.brand === "string" && s.brand ? s.brand : undefined,
+    q: typeof s["q"] === "string" && s["q"] ? s["q"] : undefined,
+    category: typeof s["category"] === "string" && s["category"] ? s["category"] : undefined,
+    brand: typeof s["brand"] === "string" && s["brand"] ? s["brand"] : undefined,
   }),
   head: () => ({
     meta: [
