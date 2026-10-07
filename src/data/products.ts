@@ -44,7 +44,7 @@ export const CATEGORIES: Category[] = [
 export const BRANDS = [
   "Prayag", "Prince", "SK", "Option", "Spider", "Geania", "Pye", "Taparia",
   "Link Locks and Tools", "Velmoc", "Powertech", "Focus", "Peacock", "Hindware",
-"Kitchencare", "Cera", "Cello", "Milton", "Pigeon", "Glen",
+"Kitchencare", "Cera", "Hindware", "Glen",
 ];
 
 // [name, brand, short description, specs "Label: value | Label: value", usuallyStocked?]
