@@ -37,14 +37,14 @@ export const CATEGORIES: Category[] = [
   { id: "kitchen", name: "Modular Kitchen", blurb: "Baskets, tandem boxes, pull-outs & profiles", image: kitchen },
   { id: "tools", name: "Tools", blurb: "Power tools, hand tools & safety gear", image: tools },
   { id: "general", name: "Fasteners & General Hardware", blurb: "Nuts, bolts, screws, padlocks & sealants", image: general },
-  { id: "kitchenware", name: "Kitchenware", blurb: "Chimneys, stoves, baskets, racks, bins & organisers", image: kitchenware },
+  { id: "kitchenware", name: "Kitchenware", blurb: "Kitchen chimneys & modular kitchen baskets", image: kitchenware },
   { id: "paint", name: "Paint & Sealants", blurb: "Brushes, rollers, putty knives & tapes", image: paint },
 ];
 
 export const BRANDS = [
   "Prayag", "Prince", "SK", "Option", "Spider", "Geania", "Pye", "Taparia",
   "Link Locks and Tools", "Velmoc", "Powertech", "Focus", "Peacock", "Hindware",
-"Kitchencare", "Cera", "Cello", "Milton", "Pigeon", "Glen",
+"Kitchencare", "Cera", "Hindware", "Glen",
 ];
 
 // [name, brand, short description, specs "Label: value | Label: value", usuallyStocked?]
@@ -160,17 +160,14 @@ const RAW: Record<string, Row[]> = {
   ],
   kitchenware: [
     ["Kitchen Chimney", "Glen", "Auto-clean kitchen chimney for smoke and oil removal.", "Width: 60 / 90 cm | Suction: 1000 – 1200 m³/hr | Type: Auto-clean", true],
-    ["Gas Stove", "Pigeon", "Glass-top gas stove with brass burners.", "Burners: 2 / 3 / 4 | Top: Toughened glass | Ignition: Manual / Auto"],
-    ["Storage Baskets", "Cello", "Stackable storage baskets for pantry and counters.", "Sizes: Assorted set of 3 / 6 | Material: Plastic", true],
-    ["Dish Drainer Rack", "Cello", "Steel dish drainer with cutlery holder and tray.", "Size: 18\" / 22\" | Material: SS + plastic tray", true],
-    ["Kitchen Wall Rack", "Kitchencare", "SS wall-mounted rack for jars and containers.", "Lengths: 18\" – 36\" | Material: SS 304", true],
-    ["Cutlery Organiser", "Cello", "Drawer cutlery organiser with compartments.", "Sizes: 4 / 6 compartment | Material: Plastic"],
-    ["Spice Rack", "Cello", "Multi-tier spice rack and jar holder.", "Tiers: 2 / 3 | Material: Plastic / SS"],
-    ["Pedal Dustbin", "Milton", "Hands-free pedal dustbin with swing lid.", "Capacity: 5 L – 20 L | Material: Plastic / SS", true],
-    ["Kitchen Trolley", "Cello", "Rolling kitchen trolley with storage shelves.", "Shelves: 2 / 3 | Wheels: Lockable castors"],
-    ["Bottle Organiser Rack", "Milton", "Fridge and counter rack for bottles and jars.", "Capacity: 4 – 8 bottles | Material: Plastic / SS"],
-    ["Knife & Utensil Holder", "Cello", "Countertop holder for knives, spoons and tools.", "Type: Knife block / Utensil stand | Material: SS / Plastic"],
-    ["Under-Sink Waste Bin", "Kitchencare", "Compact waste bin that hangs on cabinet doors.", "Capacity: 8 L – 15 L | Mounting: Cabinet door / Floor"],
+    ["Curved Glass Chimney", "Hindware", "Curved glass wall-mounted kitchen chimney.", "Width: 60 / 90 cm | Suction: 1100 m³/hr | Filter: Baffle"],
+    ["Filterless Chimney", "Glen", "Filterless auto-clean chimney with touch control.", "Width: 60 / 90 cm | Suction: 1200 – 1500 m³/hr | Control: Touch / Motion"],
+    ["Straight Line Chimney", "Hindware", "Straight-line glass kitchen chimney with LED lamps.", "Width: 60 / 90 cm | Suction: 1000 – 1350 m³/hr | Lamps: LED", true],
+    ["Wire Basket", "Kitchencare", "SS wire basket for cabinet and drawer storage.", "Widths: 15\" – 30\" | Material: SS 304", true],
+    ["Perforated Basket", "Kitchencare", "Perforated cutlery basket for kitchen cabinets.", "Widths: 12\" – 24\" | Material: SS 304", true],
+    ["Thali Basket", "Kitchencare", "Plate & thali basket for kitchen drawers.", "Widths: 15\" – 24\" | Material: SS"],
+    ["Grain Trolley Basket", "Kitchencare", "Rolling trolley basket for grains and vegetables.", "Baskets: 2 / 3 | Wheels: Lockable castors"],
+    ["Sink Pull-Out Basket", "Kitchencare", "Pull-out basket unit for below the sink.", "Mounting: Pull-out | Material: SS / Plastic"],
   ],
   paint: [
     ["Paint Brushes", "Spider", "Synthetic and bristle paint brushes.", "Sizes: 1\" – 4\"", true],
