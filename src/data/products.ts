@@ -4,7 +4,7 @@ import furniture from "@/assets/cat-furniture.jpg";
 import kitchen from "@/assets/cat-kitchen.jpg";
 import tools from "@/assets/cat-tools.jpg";
 import general from "@/assets/cat-general.jpg";
-import electrical from "@/assets/cat-electrical.jpg";
+import kitchenware from "@/assets/cat-kitchenware.jpg";
 import paint from "@/assets/cat-paint.jpg";
 
 export type Availability = "Usually in stock" | "Ask for availability";
@@ -37,14 +37,14 @@ export const CATEGORIES: Category[] = [
   { id: "kitchen", name: "Modular Kitchen", blurb: "Baskets, tandem boxes, pull-outs & profiles", image: kitchen },
   { id: "tools", name: "Tools", blurb: "Power tools, hand tools & safety gear", image: tools },
   { id: "general", name: "Fasteners & General Hardware", blurb: "Nuts, bolts, screws, padlocks & sealants", image: general },
-  { id: "electrical", name: "Electrical Fittings", blurb: "Switches, sockets, boards, tape & bulbs", image: electrical },
+  { id: "kitchenware", name: "Kitchenware", blurb: "Cookware, cookers, storage, flasks & utensils", image: kitchenware },
   { id: "paint", name: "Paint & Sealants", blurb: "Brushes, rollers, putty knives & tapes", image: paint },
 ];
 
 export const BRANDS = [
   "Prayag", "Prince", "SK", "Option", "Spider", "Geania", "Pye", "Taparia",
   "Link Locks and Tools", "Velmoc", "Powertech", "Focus", "Peacock", "Hindware",
-  "Kitchencare", "Cera",
+"Kitchencare", "Cera", "Cello", "Milton", "Pigeon",
 ];
 
 // [name, brand, short description, specs "Label: value | Label: value", usuallyStocked?]
@@ -158,14 +158,19 @@ const RAW: Record<string, Row[]> = {
     ["Construction Sealant", "Pye", "Polyurethane / acrylic sealant for joints.", "Pack: 300 ml | Type: PU / Acrylic"],
     ["Thread Seal Tape", "Pye", "Thread seal tape for plumbing joints.", "Width: 12 mm | Length: 10 m", true],
   ],
-  electrical: [
-    ["Modular Switches", "Peacock", "Modular switches for homes and offices.", "Rating: 6A / 16A | Colour: White", true],
-    ["Sockets", "Peacock", "Modular and surface sockets.", "Rating: 6A / 16A | Pins: 3 / 5", true],
-    ["Extension Boards", "Focus", "Multi-socket extension board with switch.", "Sockets: 4 / 6 | Cord: 1.5 – 5 m"],
-    ["Cable Clips", "Pye", "Nail-in cable clips for neat wiring.", "Sizes: 4 – 20 mm", true],
-    ["Insulation Tape", "Pye", "PVC electrical insulation tape.", "Width: 18 mm | Colour: Black / Assorted", true],
-    ["LED Bulbs", "Focus", "Energy-saving LED bulbs.", "Wattage: 9 – 20 W | Base: B22", true],
-    ["Electrical Boxes", "Peacock", "Modular and concealed boxes.", "Modules: 2 – 18 | Material: GI / PVC"],
+  kitchenware: [
+    ["Steel Kadhai", "Cello", "Stainless steel kadhai for deep frying and sabzi.", "Sizes: 1 L – 3 L | Base: Induction / Gas", true],
+    ["Non-Stick Tawa", "Pigeon", "Non-stick dosa and roti tawa.", "Sizes: 25 – 30 cm | Coating: Non-stick | Base: Induction"],
+    ["Pressure Cooker", "Pigeon", "ISI-marked aluminium pressure cooker.", "Sizes: 3 L – 10 L | Type: Inner / Outer lid", true],
+    ["Steel Tope", "Cello", "Stainless steel tope / patila for cooking.", "Sizes: 1.5 L – 5 L | Material: SS", true],
+    ["Saucepan", "Pigeon", "Non-stick saucepan with glass lid.", "Capacity: 1.5 L – 2.5 L | Handle: Bakelite"],
+    ["Storage Containers", "Cello", "Airtight modular kitchen storage set.", "Sizes: Assorted set of 6 / 10 | Material: BPA-free plastic", true],
+    ["Lunch Box / Tiffin", "Milton", "Insulated steel tiffin with lock clips.", "Type: 2 / 3 container | Material: SS + insulated"],
+    ["Thermos Flask", "Milton", "Keeps water hot or cold for hours.", "Capacity: 500 ml – 2 L | Material: SS body", true],
+    ["Water Bottles", "Cello", "Fridge and steel water bottles.", "Sizes: 500 ml – 2 L | Type: Plastic / SS"],
+    ["Serving Spoons & Ladles", "Cello", "Steel serving spoons, ladles and skimmers.", "Pieces: 5 / 7 | Material: SS", true],
+    ["Steel Plates & Bowls", "Cello", "Dinner plates, katoris and mixing bowls.", "Sizes: Assorted | Material: SS"],
+    ["Kettle & Tea Pot", "Pigeon", "Stove-top and electric kettles.", "Capacity: 1 L – 2 L | Type: Stove-top / Electric"],
   ],
   paint: [
     ["Paint Brushes", "Spider", "Synthetic and bristle paint brushes.", "Sizes: 1\" – 4\"", true],
