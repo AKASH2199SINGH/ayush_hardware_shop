@@ -37,14 +37,14 @@ export const CATEGORIES: Category[] = [
   { id: "kitchen", name: "Modular Kitchen", blurb: "Baskets, tandem boxes, pull-outs & profiles", image: kitchen },
   { id: "tools", name: "Tools", blurb: "Power tools, hand tools & safety gear", image: tools },
   { id: "general", name: "Fasteners & General Hardware", blurb: "Nuts, bolts, screws, padlocks & sealants", image: general },
-  { id: "kitchenware", name: "Kitchenware", blurb: "Cookware, cookers, storage, flasks & utensils", image: kitchenware },
+  { id: "kitchenware", name: "Kitchenware", blurb: "Chimneys, stoves, baskets, racks, bins & organisers", image: kitchenware },
   { id: "paint", name: "Paint & Sealants", blurb: "Brushes, rollers, putty knives & tapes", image: paint },
 ];
 
 export const BRANDS = [
   "Prayag", "Prince", "SK", "Option", "Spider", "Geania", "Pye", "Taparia",
   "Link Locks and Tools", "Velmoc", "Powertech", "Focus", "Peacock", "Hindware",
-"Kitchencare", "Cera", "Cello", "Milton", "Pigeon",
+"Kitchencare", "Cera", "Cello", "Milton", "Pigeon", "Glen",
 ];
 
 // [name, brand, short description, specs "Label: value | Label: value", usuallyStocked?]
