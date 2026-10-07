@@ -37,14 +37,14 @@ export const CATEGORIES: Category[] = [
   { id: "kitchen", name: "Modular Kitchen", blurb: "Baskets, tandem boxes, pull-outs & profiles", image: kitchen },
   { id: "tools", name: "Tools", blurb: "Power tools, hand tools & safety gear", image: tools },
   { id: "general", name: "Fasteners & General Hardware", blurb: "Nuts, bolts, screws, padlocks & sealants", image: general },
-  { id: "kitchenware", name: "Kitchenware", blurb: "Cookware, cookers, storage, flasks & utensils", image: kitchenware },
+  { id: "kitchenware", name: "Kitchenware", blurb: "Chimneys, stoves, baskets, racks, bins & organisers", image: kitchenware },
   { id: "paint", name: "Paint & Sealants", blurb: "Brushes, rollers, putty knives & tapes", image: paint },
 ];
 
 export const BRANDS = [
   "Prayag", "Prince", "SK", "Option", "Spider", "Geania", "Pye", "Taparia",
   "Link Locks and Tools", "Velmoc", "Powertech", "Focus", "Peacock", "Hindware",
-"Kitchencare", "Cera", "Cello", "Milton", "Pigeon",
+"Kitchencare", "Cera", "Cello", "Milton", "Pigeon", "Glen",
 ];
 
 // [name, brand, short description, specs "Label: value | Label: value", usuallyStocked?]
@@ -159,18 +159,18 @@ const RAW: Record<string, Row[]> = {
     ["Thread Seal Tape", "Pye", "Thread seal tape for plumbing joints.", "Width: 12 mm | Length: 10 m", true],
   ],
   kitchenware: [
-    ["Steel Kadhai", "Cello", "Stainless steel kadhai for deep frying and sabzi.", "Sizes: 1 L – 3 L | Base: Induction / Gas", true],
-    ["Non-Stick Tawa", "Pigeon", "Non-stick dosa and roti tawa.", "Sizes: 25 – 30 cm | Coating: Non-stick | Base: Induction"],
-    ["Pressure Cooker", "Pigeon", "ISI-marked aluminium pressure cooker.", "Sizes: 3 L – 10 L | Type: Inner / Outer lid", true],
-    ["Steel Tope", "Cello", "Stainless steel tope / patila for cooking.", "Sizes: 1.5 L – 5 L | Material: SS", true],
-    ["Saucepan", "Pigeon", "Non-stick saucepan with glass lid.", "Capacity: 1.5 L – 2.5 L | Handle: Bakelite"],
-    ["Storage Containers", "Cello", "Airtight modular kitchen storage set.", "Sizes: Assorted set of 6 / 10 | Material: BPA-free plastic", true],
-    ["Lunch Box / Tiffin", "Milton", "Insulated steel tiffin with lock clips.", "Type: 2 / 3 container | Material: SS + insulated"],
-    ["Thermos Flask", "Milton", "Keeps water hot or cold for hours.", "Capacity: 500 ml – 2 L | Material: SS body", true],
-    ["Water Bottles", "Cello", "Fridge and steel water bottles.", "Sizes: 500 ml – 2 L | Type: Plastic / SS"],
-    ["Serving Spoons & Ladles", "Cello", "Steel serving spoons, ladles and skimmers.", "Pieces: 5 / 7 | Material: SS", true],
-    ["Steel Plates & Bowls", "Cello", "Dinner plates, katoris and mixing bowls.", "Sizes: Assorted | Material: SS"],
-    ["Kettle & Tea Pot", "Pigeon", "Stove-top and electric kettles.", "Capacity: 1 L – 2 L | Type: Stove-top / Electric"],
+    ["Kitchen Chimney", "Glen", "Auto-clean kitchen chimney for smoke and oil removal.", "Width: 60 / 90 cm | Suction: 1000 – 1200 m³/hr | Type: Auto-clean", true],
+    ["Gas Stove", "Pigeon", "Glass-top gas stove with brass burners.", "Burners: 2 / 3 / 4 | Top: Toughened glass | Ignition: Manual / Auto"],
+    ["Storage Baskets", "Cello", "Stackable storage baskets for pantry and counters.", "Sizes: Assorted set of 3 / 6 | Material: Plastic", true],
+    ["Dish Drainer Rack", "Cello", "Steel dish drainer with cutlery holder and tray.", "Size: 18\" / 22\" | Material: SS + plastic tray", true],
+    ["Kitchen Wall Rack", "Kitchencare", "SS wall-mounted rack for jars and containers.", "Lengths: 18\" – 36\" | Material: SS 304", true],
+    ["Cutlery Organiser", "Cello", "Drawer cutlery organiser with compartments.", "Sizes: 4 / 6 compartment | Material: Plastic"],
+    ["Spice Rack", "Cello", "Multi-tier spice rack and jar holder.", "Tiers: 2 / 3 | Material: Plastic / SS"],
+    ["Pedal Dustbin", "Milton", "Hands-free pedal dustbin with swing lid.", "Capacity: 5 L – 20 L | Material: Plastic / SS", true],
+    ["Kitchen Trolley", "Cello", "Rolling kitchen trolley with storage shelves.", "Shelves: 2 / 3 | Wheels: Lockable castors"],
+    ["Bottle Organiser Rack", "Milton", "Fridge and counter rack for bottles and jars.", "Capacity: 4 – 8 bottles | Material: Plastic / SS"],
+    ["Knife & Utensil Holder", "Cello", "Countertop holder for knives, spoons and tools.", "Type: Knife block / Utensil stand | Material: SS / Plastic"],
+    ["Under-Sink Waste Bin", "Kitchencare", "Compact waste bin that hangs on cabinet doors.", "Capacity: 8 L – 15 L | Mounting: Cabinet door / Floor"],
   ],
   paint: [
     ["Paint Brushes", "Spider", "Synthetic and bristle paint brushes.", "Sizes: 1\" – 4\"", true],
