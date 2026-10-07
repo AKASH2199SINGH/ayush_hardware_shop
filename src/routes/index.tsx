@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const FEATURED = ["bath-basin-mixer", "pipe-cpvc-pipe", "furniture-soft-close-hinges", "kitchen-tandem-drawer-box", "tools-drill-machine", "general-silicone-sealant", "electrical-modular-switches", "bath-health-faucet"];
+const FEATURED = ["bath-basin-mixer", "pipe-cpvc-pipe", "furniture-soft-close-hinges", "kitchen-tandem-drawer-box", "tools-drill-machine", "general-silicone-sealant", "kitchenware-pressure-cooker", "bath-health-faucet"];
 
 function Home() {
   const featured = FEATURED.map((id) => PRODUCTS.find((p) => p.id === id)!).filter(Boolean);
