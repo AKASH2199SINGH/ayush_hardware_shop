@@ -20,7 +20,7 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
       { title: "Product Catalog — Hariom Fancy Hardware, Kanpur" },
-      { name: "description", content: "Search bath fittings, pipes, furniture & kitchen hardware, tools, fasteners and electricals. Ask price and availability on WhatsApp." },
+      { name: "description", content: "Search bath fittings, pipes, furniture & kitchen hardware, kitchenware, tools and fasteners. Ask price and availability on WhatsApp." },
       { property: "og:title", content: "Product Catalog — Hariom Fancy Hardware" },
       { property: "og:description", content: "Browse 100+ hardware products and enquire on WhatsApp." },
     ],

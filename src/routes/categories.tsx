@@ -9,7 +9,7 @@ export const Route = createFileRoute("/categories")({
   head: () => ({
     meta: [
       { title: "Categories — Hariom Fancy Hardware, Kanpur" },
-      { name: "description", content: "Bath fittings, pipe fittings, furniture fittings, modular kitchen, tools, fasteners, electrical and paint supplies." },
+      { name: "description", content: "Bath fittings, pipe fittings, furniture fittings, modular kitchen, kitchenware, tools, fasteners and paint supplies." },
       { property: "og:title", content: "Hardware Categories — Hariom Fancy Hardware" },
       { property: "og:description", content: "Eight departments of hardware under one roof in Kanpur." },
     ],
