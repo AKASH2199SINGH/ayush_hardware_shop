@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact & Visit — Hariom Fancy Hardware, Kanpur" },
-      { name: "description", content: "Satbari Road, New Azad Nagar, Kanpur. Call or WhatsApp 740896927. Open Mon–Sat 9:30 AM – 8:30 PM." },
+      { name: "description", content: "Satbari Road, New Azad Nagar, Kanpur. Call or WhatsApp 7408969327. Open Mon–Sat 9:30 AM – 8:30 PM." },
       { property: "og:title", content: "Contact Hariom Fancy Hardware" },
       { property: "og:description", content: "Send your requirement on WhatsApp or visit the shop in Kanpur." },
     ],
